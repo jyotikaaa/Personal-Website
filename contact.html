@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body style="background-color: black;">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Why this project</a>
+        <a href="home.html">About Me</a>
+        <a href="resume.html">Resume</a></u>
+        <a href="projects.html">Projects</a>
+        <a href="hobbies.html">Hobbies</a>
+        <u><a style="color: antiquewhite;" href="contact.html">Contact</a></u>
+        <a href="feedback.html">Feedback</a>
+    </div>
+
+    <div id="main">
+
+        <div class="website-header-home">
+            <button type="button" class="navbar-toggler" onclick="openNav()">
+                <i class="fas fa-bars" style="font-size: 35px;"></i>
+            </button>
+            <div class="website-title ml-3" style="font-size: 40px;">
+                Cookies & Treats
+            </div>
+            <div class="sub-header mt-2 mb-2 mr-4">
+                Jyotika Sawlani
+            </div>
+        </div>
+
+        <div class="contact-header">
+
+        </div>
+
+        <div class="row contact-container">
+
+            <div class="col-2"></div>
+
+            <div class="col-3-lg mt-5">
+                <div class="card cd" style="background-color: #d5dbdb;">
+                    <div class="icons-heading mt-2" style="text-align: center;">
+                        <h4>Reach out to me on:</h4>
+                    </div>
+                    <div class="col-2 icons-container mt-3">
+                        <div class="row-1">
+                            <div class="card btn btn-lg mb-3" style="width: 15rem; margin-left: 0px;" data-toggle="tooltip" title="connect via LinkedIn">
+                                <a class="fa fa-linkedin link" style="font-size: 40px; color: white;" href="https://www.linkedin.com/in/jyotika-sawlani-b4b81017b" target="blank"></a>
+                            </div>
+                        </div>
+
+                        <div class="row-1">
+                            <div class="card btn btn-lg mb-3" style="width: 15rem;" data-toggle="tooltip" title="connect via Instagram">
+                                <a class="fa fa-instagram link" style="font-size: 40px; color: white;" href="https://www.instagram.com/__sj._._" target="blank"></a>
+                            </div>
+                        </div>
+
+                        <div class="row-1">
+                            <div class="card btn btn-lg mb-3" style="width: 15rem;" data-toggle="tooltip" title="connect via GitHub">
+                                <a class="fa fa-github link" style="font-size: 40px; color: white;" href="https://github.com/jyotikaaa" target="blank"></a>
+                            </div>
+                        </div>
+
+                        <div class="row-1">
+                            <div class="card btn btn-lg mb-3" style="width: 15rem;" data-toggle="tooltip" title="connect via Facebook">
+                                <a class="fa fa-facebook link" style="font-size: 40px; color: white;" href="https://www.facebook.com/JyotikaSawlani" target="blank"></a>
+                            </div>
+                        </div>
+
+                        <div class="row-1">
+                            <div class="card btn btn-lg mb-3" style="width: 15rem; color: white;" data-toggle="tooltip" title="connect via Twitter">
+                                <a class="fa fa-twitter link" style="font-size: 40px;" href="https://twitter.com/JyotikaSawlani" target="blank"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1"></div>
+            <div class="container-mail col-5 mt-5" style="background-color: #d5dbdb;">
+
+                <div class="mail-heading mt-4">
+                    <h4>Or send a mail instead</h4>
+                </div>
+
+                <form method="POST">
+                    <div class="feilds-wrapper mt-3">
+                        <!--<fieldset>
+                            <input name="name" type="text" class="form-control" id="name" placeholder="Name..." required>
+                        </fieldset>
+                        <fieldset>
+                            <input name="email" type="email" class="form-control" id="email" placeholder="Email..." required>
+                        </fieldset>
+                        <fieldset>-->
+                        <input name="subject" type="subject" class="form-control" id="subject" placeholder="Subject..." required>
+                        </fieldset>
+                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message..." required></textarea>
+                        <fieldset style="text-align: center;">
+                            <button type="submit" id="form-submit" class="btn btn-primary mt-4 mb-4" style="text-align: center;" data-toggle="tooltip" title="send to sawlanijyotika@gmail.com" onclick="sendMail()">
+                                Send your message
+                            </button>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>

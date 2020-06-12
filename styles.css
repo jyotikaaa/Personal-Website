@@ -1,0 +1,288 @@
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    /*Shared Styles*/
+    
+    .website-title {
+        font-family: 'Dancing Script', cursive;
+    }
+    
+    .sub-header {
+        font-size: 30px;
+        color: white;
+    }
+    
+    .index-container {
+        border-radius: 20px;
+        padding: 10px;
+    }
+    /*Styles for Index Page*/
+    
+    .website-header-index {
+        background-color: #FFDAB9;
+    }
+    
+    .website-footer-index {
+        background-color: #FFDAB9;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    
+    .container {
+        background-color: #F4F6F6;
+    }
+    
+    .container-content {
+        padding: 20px;
+    }
+    
+    .container-header {
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    .container-body {
+        padding: 20px;
+        font-size: 20px;
+    }
+    
+    .container-footer {
+        text-align: center;
+    }
+    
+    .poppins-text {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .footer-container {
+        padding: 20px;
+        background-color: #FFDAB9;
+    }
+    
+    .details {
+        text-align: left;
+        font-size: 12px;
+    }
+    /*Styles for Home Page*/
+    
+    .website-header-home {
+        background-color: #FFDAB9;
+    }
+    /* The side navigation menu */
+    
+    .sidenav {
+        height: 100%;
+        /* 100% Full-height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        /* Stay at the top */
+        left: 0;
+        background-color: #111;
+        /* Black*/
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 60px;
+        /* Place content 60px from the top */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in the sidenav */
+    }
+    
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+        color: antiquewhite;
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    #main {
+        transition: margin-left .5s;
+    }
+    
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+    /*About Me*/
+    
+    .content-about-me {
+        padding: 20px;
+        background-color: white;
+        border-radius: 15px;
+    }
+    
+    .content-about-me>div {
+        padding: 20px;
+    }
+    
+    .carousel-container {
+        padding: 20px;
+    }
+    /*Resume*/
+    
+    .resume-container {
+        background-color: #d5dbdb;
+        border-radius: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .resume-container>div {
+        padding: 20px;
+    }
+    
+    .resume-header {
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .resume-body>div {
+        padding: 15px;
+    }
+    
+    td {
+        padding: 5px;
+        font-size: 15px;
+    }
+    
+    progress {
+        border-radius: 30px;
+    }
+    /*Contact*/
+    
+    .fa {
+        width: 13rem;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-linkedin {
+        background: #007bb5;
+    }
+    
+    .fa-instagram {
+        background: #125688;
+    }
+    
+    .fa-facebook {
+        background: #3B5998;
+    }
+    
+    .fa-twitter {
+        background: #55ACEE;
+    }
+    
+    .fa-github {
+        background: black;
+    }
+    
+    .container-mail {
+        border-radius: 12px;
+    }
+    
+    .link:hover {
+        text-decoration: none;
+    }
+    /*Hobbies*/
+    
+    .hobbies-outer-container {
+        background-color: white;
+    }
+    
+    .container-carousel {
+        background-color: blue;
+    }
+    
+    .container-hobby-text {
+        background-color: aqua;
+    }
+    
+    #cc {
+        visibility: hidden;
+    }
+    /*Projects*/
+    
+    .jumbtron {
+        height: 130px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+    }
+    
+    .jumbotron-text {
+        text-align: center;
+        font-size: 17px;
+    }
+    
+    .jumbotron-links {
+        margin-top: 0px;
+    }
+    
+    .jumbotron-links>a {
+        margin-right: 17px;
+        font-size: 20px;
+    }
+    
+    .project-container {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .project-header {
+        color: white;
+        font-size: 30px;
+    }
+    
+    .light-hr {
+        color: white
+    }
+    
+    .project-description {
+        color: white;
+        font-size: 15px;
+    }
+    
+    .link-to-top {
+        text-align: right;
+    }
+    /*Feedback Page*/
+    
+    .form-container {
+        background-color: rgba(255, 255, 255, 255);
+        border-radius: 30px;
+    }
+    
+    .form-card-header {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .form-card-body>input {
+        margin-bottom: 5px;
+    }
+    
+    .form-card-footer {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
