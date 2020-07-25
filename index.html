@@ -1,78 +1,315 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zxx">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+	<title>Jyotika Sawlani</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Jyotika Sawlani, Personal Website, Resume, Skills, Computer Engineer, Software Developer, ASP.NET Developer" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	</script>
+	<!-- //Meta tag Keywords -->
+	<!-- Custom-Files -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //Custom-Files -->
+	<!-- Web-Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<!-- //Web-Fonts -->
+	
 </head>
+<body class="light-mode" id="body">
+	<!-- header -->
+		<!-- navigation -->
+		<div class="main-top">
+		 <header id="home">
+			<div class="container-fluid px-lg-5 ">
+				<nav class="mnu mx-auto">
+						  <label for="drop" class="toggle">Menu</label>
+							<input type="checkbox" id="drop">
+							<ul class="menu">
+								<li class="mr-lg-4 mr-3 active"><a href="index.html">Home</a></li>
+								<li class="mr-lg-4 mr-3"><a href="#about" class="scroll">About Me</a></li>
+								<li class="mr-lg-4 mr-3"><a href="#services" class="scroll">Skills</a></li>
+								<li class="mr-lg-4 mr-3"><a href="#work" class="scroll">Resume</a></li>
+								<li><a href="#contact" class="scroll">Contact</a></li>
+							</ul>
+						</nav>
+			</div>
+		</header>
+		</div>
+		<!-- //navigation-->
 
-<body>
+		<button id="switchMode" class="btn btn-sm light-mode" onclick="changeMode()"><span class="fa fa-moon-o" id="icon"></span></button>
 
-    <div class="website-header-index" style="text-align: center;">
-        <div class="website-title row-1" style="font-size: 70px;">
-            Cookie
-        </div>
-        <div class="poppins-text sub-header">
-            A personal website
-        </div>
-    </div>
-
-    <div class="container mt-4 mb-4 index-container" style="background-color: #E7E8E8;">
-        <div class="row">
-            <div class="col-12 container-content">
-                <div class="container-header">
-                    Why this project?
-                </div>
-                <div class="poppins-text container-body mt-3">
-                    What’s the #1 networking tool you can have in your arsenal as a student? I’ll tell you this right now: it isn’t your resume. <br><br> Resumes are boring. Career experts tell you to make your resume a one-page, size 11 Time New Roman
-                    document printed with black ink with no pictures. Seriously? How are you supposed to represent — and differentiate – yourself with that?<br><br> Plus, your resume becomes static and outdated the moment you hand it to someone. You can’t
-                    update resumes you’ve already given out – you have to make new copies.<br><br><b><i>That’s why you need to create a personal website.</b></i> <br><br> A website is the complete opposite of a resume. Everything bad about resumes can
-                    be fixed simply by having a website. I’d go as far as to say that not having a website is like shooting yourself in the foot – it’s that useful.<br><br>
-                </div>
-                <div class="poppins-text container-footer mt-2">
-                    <a class="btn btn-outline-dark btn-lg" href="home.html">
-                        Go to website
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="container-fluid footer-container">
-            <div class="row">
-                <div class="col-12 col-sm-9" style="text-align: left; color: #000;">
-                    <h5>Made with <i class="fa fa-heart"></i></h5>
-                    <h5>by Jyotika Sawlani</h5>
-                </div>
-                <div class="col-12 col-sm-3 details">
-                    <b>College: GEC Gandhinagar <br>Enrollment: 170130107104 <br>Branch: CE-B (3rd Year) <br>Subject: Web Technologies</b>
+	<section class="banner-bottom" id="about">
+		<div class="container">
+            <div class="inner-sec">
+                <div class="row middle-grids">
+                    <div class="col-lg-4 advantage-grid-info1">
+                        <div class="advantage_left1 text-center">
+                            <img src="images/1.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div> 
+					 <div class="col-lg-8 advantage-grid-info">
+                        <div class="advantage_left">
+                             <h1 class="heading text-capitalize mb-sm-5 mb-4 light-mode">Hi. I'm <span>Jyotika Sawlani.</span></h1>
+							<p class="mt-4 subs light-mode">A computer engineer who <span>hates </span>coding.</p>
+							<a href="#" class="banner-button btn mt-5 scroll">Why should I be hired?</a>
+						</div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+		</div>
+    </section>
+	<div class="agileits-services light-mode" id="services">
+		<div class="container">
+		   <h2 class="heading text-capitalize light-mode" id="headings" > Skills </h2>
+		   <!--<p class="subs mt-4 light-mode">Proin ac fermentum est. Cras mi ipsum, consectetur.</p>
+            <div class="agileits-services-row row pt-md-5 pb-5  text-center">
+                <div class="col-lg-4">
+                    <div class="agileits-services-grids mt-lg-0 mt-md-0 mt-5">
+                       <span class="fa fa-code"></span>
+                        <h4 class="mt-4 mb-4">Consectetur</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum inventore consectetur. </p>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="agileits-services-grids mt-lg-0 mt-5">
+                        <span class="fa fa-copy"></span>
+                        <h4 class="mt-4 mb-4">Adipisicing</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum inventore consectetur.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4  mt-lg-0 mt-5">
+                    <div class="agileits-services-grids">
+                       <span class="fa fa-diamond"></span>
+                       <h4 class="mt-4 mb-4">Sit amet</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum inventore consectetur.</p>
+                    </div>
+                </div>
+			</div>-->
 
+			<div class="skill-grids row">
+				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
+					<div class="circle" id="circles-1"></div>
+					<p>Photoshop</p>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
+					<div class="circle" id="circles-2"></div>
+					<p>Android</p>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
+					<div class="circle" id="circles-3"></div>
+					<p>Content Writing</p>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
+					<div class="circle" id="circles-4"></div>
+					<p>Angular</p>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
+					<div class="circle" id="circles-5"></div>
+					<p>ASP.NET CORE</p>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
+					<div class="circle" id="circles-6"></div>
+					<p>HTML/CSS/Bootstrap</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<script src="js/circles.js"></script>
+			<script>
+				
+				var colors = [ ['#ffffff','#f6608a',], ['#ffffff','#f6608a',], ['#ffffff','#f6608a',], ['#ffffff','#f6608a',], ['#ffffff','#f6608a',], ['#ffffff','#f6608a',]];
+					for (var i = 1; i <= 7; i++) {
+						var child = document.getElementById('circles-' + i),
+							percentage = 30 + (i * 10);
+										
+									Circles.create({
+										id:         child.id,
+										percentage: percentage,
+										radius:     80,
+										width:      10,
+										number:   	percentage / 1,
+										text:       '%',
+										colors:     colors[i - 1]
+									});
+								}
+						
+						
+			</script>
 
+			
+			<a href="#work" class="banner-button btn mt-5">My Resume</a>
+    	</div>
+	</div>
+	<!-- works -->
+	<section class="news light-mode" id="work">
+		<div class="text-center">
+			<button class="btn light-mode" id="download">Download Resume <span class="fa fa-download"></span></button>
+		</div>
+		<div class="container resume-container mt-5">
+			<div class="resume-header">
+				<h3>RESUME</h3>
+			</div>
+			<hr>
+			<div class="resume-body">
+				<div class="objective">
+					<h3>Objective</h3><br> Enthusiatic learner, seeking an entry-level internship position, bringing outstanding dedication to the organization's affairs while gaining experience on the field.
+				</div>
+				<hr>
+				<div class="education">
+					<h3>Education</h3><br> <b>Government Engineering College, Gandhinagar</b><br>BE in Computer Engineering<br>CPI-9
+				</div>
+				<hr>
+				<div class="technical-skills">
+					<h3>Technical Skills</h3><br>
+					<div class="category">
+						<b>Languages</b><br>
+						<table class="table table-borderless table-sm">
+							<tr>
+								<td style="width: 200px;">C, C++</td>
+								<td><progress class="progress-bar" value="90" max="100"></progress></td>
+							</tr>
+							<tr>
+								<td>C#</td>
+								<td><progress class="progress-bar" value="80" max="100"></progress></td>
+							</tr>
+							<tr>
+								<td>Java</td>
+								<td><progress class="progress-bar" value="70" max="100"></progress></td>
+							</tr>
+							<tr>
+								<td>HTML</td>
+								<td><progress class="progress-bar" value="90" max="100"></progress></td>
+							</tr>
+							<tr>
+								<td>CSS,Bootstrap</td>
+								<td><progress class="progress-bar" value="90" max="100"></progress></td>
+							</tr>
+						</table>
+					</div><br>
+					<b>Frameworks</b><br>
+					<div class="category">
+						<table class="table table-borderless table-sm">
+							<tr>
+								<td style="width: 200px;">ASP.NET MVC</td>
+								<td><progress class="progress-bar" value="50" max="100"></progress></td>
+							</tr>
+							<tr>
+								<td>ASP.NET CORE</td>
+								<td><progress class="progress-bar" value="80" max="100"></progress></td>
+							</tr>
+							<tr>
+								<td>Android</td>
+								<td><progress class="progress-bar" value="50" max="100"></progress></td>
+							</tr>
+						</table>
+					</div><br>
+					<b>Other Skills</b><br>
+					<div class="category">
+						<table class="table table-borderless table-sm">
+							<tr>
+								<td style="width: 200px;">Graphics Designing</td>
+								<td><progress class="progress-bar" value="60" max="100"></progress></td>
+							</tr>
+							<tr>
+								<td>Content Writing</td>
+								<td><progress class="progress-bar" value="90" max="100"></progress></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<hr>
+				<div class="achievements">
+					<h3>Achievements</h3><br> <b>Event: 21st ISTE National Students Convention 2019</b><br>College: LDCE<br>Activity: Poster Presentation on Artificial Intelligence<br>Position Secured: 2nd
+				</div>
+				<hr>
+				<div class="activities">
+					<h3>Activities</h3><br>
+					<ul type="disc">
+						<li>Attended a workshop on Web Development at Silverwing Private Ltd. Company</li>
+						<li>Attended a workshop on Machine Learning at DAIICT</li>
+						<li>Participated in Smart Gujarat for New India Hackathon and got qualified for zonal round</li>
+						<li>Volunteered a non-tech event at GECG during Quench Tech-Fest</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+						
+		</div>
+		</section>
+		<!-- //works -->
+<!-- contact -->
+	 <section class="wedo" id="contact">
+		<div class="container">
+			<h3 class="heading text-capitalize text-white text-center"> Contact </h3>
+		   <!--<p class="subs mt-4 text-center">Proin ac fermentum est. Cras mi ipsum, consectetur.</p>
+			<div class="contact_grid_right mt-5 mx-auto text-center">
+				<form action="#" method="post">
+					<div class="row contact_top">
+						<div class="col-sm-6">
+							<input type="text" name="Name" placeholder="Name" required="">
+						</div>
+						<div class="col-sm-6">
+							<input type="email" name="Email" placeholder="Email" required="">
+						</div>
+					</div>	
+						<input type="text" name="Name" placeholder="Name" required="">
+						<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+						<input type="submit" value="Send Message">
+						<input type="reset" value="Clear Form">
+						<div class="clearfix"> </div>
+				</form>
+			</div>-->
+			<div class="cpy-right text-center">
+			<div class="follow">
+				<ul class="social_section_1info">
+					<li><a href="https://www.facebook.com/JyotikaSawlani" target="blank"><span class="fa fa-facebook"></span></a></li>
+					<li><a href="https://twitter.com/JyotikaSawlani" target="blank"><span class="fa fa-twitter"></span></a></li>
+					<li><a href="https://www.instagram.com/__sj._._" target="blank"><span class="fa fa-instagram"></span></a></li>
+					<li><a href="#"><span class="fa fa-envelope"></span></a></li>
+					<li><a href="https://github.com/jyotikaaa" target="blank"><span class="fa fa-github"></span></a></li>
+					<li><a href="https://www.linkedin.com/in/jyotika-sawlani-b4b81017b" target="blank"><span class="fa fa-linkedin"></span></a></li>
+				</ul>
+			</div>
+				<p>© 2020 Exclusive. All rights reserved. </p>
+			</div>
+		</div>
+	</section>
+	 <!-- //contact -->
 
+	 <!--start-smoth-scrolling-->
+	 
+	<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			mybutton = document.getElementById("toTop");
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+			{
+				mybutton.style.display = "block";
+			} 
+			else 
+			{
+				mybutton.style.display = "none";
+			}
+		}
+	</script>
+	<script src="js/scripts.js"></script>
 </body>
-
 </html>
