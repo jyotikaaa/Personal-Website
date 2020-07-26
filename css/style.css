@@ -18,24 +18,41 @@ html {
 .skill-grids{
     padding-top: 40px;
 }
+.modal-header{
+    border-bottom: none;
+}
 
 .skills-grid{
     margin-bottom: 30px;
 }
 
 #download.light-mode{
-    background-color:#212121 ;
+    background-color:#2e2e2e ;
     color: white;
+
 }
 #download.dark-mode{
     background-color:#777 ;
-    color: #fff;
+    color: white;
+}
+#download:hover{
+    background-color:#414141 ;
 }
 
 .resume-container {
-    background-color: #d5dbdb;
-    border-radius: 40px;
+    background-color: #d6d6d6;
+    border-radius: 10px;
     margin-bottom: 10px;
+}
+
+#modal.light-mode{
+    background-color: white;
+    color:gray;
+}
+
+#modal.dark-mode{
+    background-color: white;
+    color:gray;
 }
 
 .resume-container>div {
@@ -50,6 +67,7 @@ html {
 .resume-body>div {
     padding: 15px;
 }
+
 
 td {
     padding: 5px;
@@ -121,23 +139,6 @@ a:hover {
     text-decoration: none;
 }
 
-input[type="button"],
-input[type="submit"] {
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-}
-
-input[type="button"]:hover,
-input[type="submit"]:hover {
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-}
 
 h1,
 h2,
@@ -150,14 +151,25 @@ h6 {
    font-family: 'Open Sans', sans-serif;
 }
 
-p {
+p.light-mode {
     margin: 0;
     padding: 0;
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 1.9;
     color: #888;
-	font-weight: 300;
+	font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+p.dark-mode{
+
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.9;
+    color: rgb(170, 170, 170);
+	font-weight: 500;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -250,11 +262,11 @@ nav ul li {
 /* Styling the links */
 
 nav a {
-       padding: 0;
-    color: #fff;
+    padding: 0;
+    color: rgb(185, 185, 185);
     font-size: 16px;
     letter-spacing: 2px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 
@@ -508,25 +520,23 @@ li > a:only-child:after {
     height: 300px;
     border-radius: 50%;
 }
-a.banner-button, button.submit {
-    background: #EA8A95;
+.banner-button, button.submit {
+    background: #e66b79;
     color: #fff;
     letter-spacing: 1px;
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 500;
 	border:none;
     padding: 14px 34px;
-	text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
-	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5);
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -ms-transition: 0.5s all;
     transition: 0.5s all;
 }
-a.banner-button:hover {
+.banner-button:hover {
     border:none;
-     background:#e07682;
+     background:#db5363;
     color: #fff;
 }
 a.banner-button2 {
@@ -547,7 +557,7 @@ a.banner-button2:hover {
 }
 .banner-bottom {
     padding: 10em 0;
-    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
+    
 }
 .agileits-services-grids i {
     font-size: 2em;

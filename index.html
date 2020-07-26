@@ -18,7 +18,7 @@
 	</script>
 	<!-- //Meta tag Keywords -->
 	<!-- Custom-Files -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Bootstrap-Core-CSS -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 	<!-- Style-CSS -->
@@ -28,31 +28,34 @@
 	<!-- Web-Fonts -->
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 	<!-- //Web-Fonts -->
+	<script src="js/scripts.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	
 </head>
-<body class="light-mode" id="body">
+<body class="dark-mode" id="body">
 	<!-- header -->
 		<!-- navigation -->
 		<div class="main-top">
 		 <header id="home">
 			<div class="container-fluid px-lg-5 ">
 				<nav class="mnu mx-auto">
-						  <label for="drop" class="toggle">Menu</label>
+						  <label for="drop" class="toggle btn text-white" style="background:#e97c88 ;">Menu</label>
 							<input type="checkbox" id="drop">
 							<ul class="menu">
 								<li class="mr-lg-4 mr-3 active"><a href="index.html">Home</a></li>
-								<li class="mr-lg-4 mr-3"><a href="#about" class="scroll">About Me</a></li>
+								<li class="mr-lg-4 mr-3"><a href="#" data-toggle="modal" data-target="#myModal" class="scroll">About Me</a></li>
 								<li class="mr-lg-4 mr-3"><a href="#services" class="scroll">Skills</a></li>
 								<li class="mr-lg-4 mr-3"><a href="#work" class="scroll">Resume</a></li>
 								<li><a href="#contact" class="scroll">Contact</a></li>
 							</ul>
-						</nav>
+				</nav>
 			</div>
 		</header>
 		</div>
 		<!-- //navigation-->
 
-		<button id="switchMode" class="btn btn-sm light-mode" onclick="changeMode()"><span class="fa fa-moon-o" id="icon"></span></button>
+		<button id="switchMode" class="btn btn-sm dark-mode" onclick="changeMode()"><span class="fa fa-moon-o" id="icon"></span></button>
 
 	<section class="banner-bottom" id="about">
 		<div class="container">
@@ -65,19 +68,38 @@
                     </div> 
 					 <div class="col-lg-8 advantage-grid-info">
                         <div class="advantage_left">
-                             <h1 class="heading text-capitalize mb-sm-5 mb-4 light-mode">Hi. I'm <span>Jyotika Sawlani.</span></h1>
-							<p class="mt-4 subs light-mode">A computer engineer who <span>hates </span>coding.</p>
-							<a href="#" class="banner-button btn mt-5 scroll">Why should I be hired?</a>
+                             <h1 class="heading text-capitalize mb-sm-5 mb-4 dark-mode">Hi. I'm <span>Jyotika Sawlani.</span></h1>
+							<p class="mt-4 subs dark-mode">A computer engineer who <span>hates </span>coding.</p>
+							<a href="#" data-toggle="modal" data-target="#myModal" class="banner-button btn mt-5" >Why should I be hired?</a>
 						</div>
                     </div>
                 </div>
             </div>
 		</div>
-    </section>
-	<div class="agileits-services light-mode" id="services">
+	</section>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLabel"
+		aria-hidden="true">
+		<div class="modal-dialog mt-5" role="document">
+			<div class="modal-content modal-text dark-mode" id="modal">
+				<div class="modal-header">
+					<h5 class="modal-title" id="myLabel"><strong>I should be hired because...</strong></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>I listen. I question. I'm dedicated. I always find a drive in everything that I do. I'm hardworking.</p>
+
+				</div>
+			</div>		
+		</div>
+	</div>
+	
+	<div class="agileits-services dark-mode" id="services">
 		<div class="container">
-		   <h2 class="heading text-capitalize light-mode" id="headings" > Skills </h2>
-		   <!--<p class="subs mt-4 light-mode">Proin ac fermentum est. Cras mi ipsum, consectetur.</p>
+		   <h2 class="heading text-capitalize dark-mode" id="headings" > Skills </h2>
+		   <!--<p class="subs mt-4 dark-mode">Proin ac fermentum est. Cras mi ipsum, consectetur.</p>
             <div class="agileits-services-row row pt-md-5 pb-5  text-center">
                 <div class="col-lg-4">
                     <div class="agileits-services-grids mt-lg-0 mt-md-0 mt-5">
@@ -106,27 +128,27 @@
 			<div class="skill-grids row">
 				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
 					<div class="circle" id="circles-1"></div>
-					<p>Photoshop</p>
+					<p class="dark-mode">Photoshop</p>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
 					<div class="circle" id="circles-2"></div>
-					<p>Android</p>
+					<p class="dark-mode">Android</p>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
 					<div class="circle" id="circles-3"></div>
-					<p>Content Writing</p>
+					<p class="dark-mode">Content Writing</p>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
 					<div class="circle" id="circles-4"></div>
-					<p>Angular</p>
+					<p class="dark-mode">Angular</p>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
 					<div class="circle" id="circles-5"></div>
-					<p>ASP.NET CORE</p>
+					<p class="dark-mode">ASP.NET CORE</p>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
 					<div class="circle" id="circles-6"></div>
-					<p>HTML/CSS/Bootstrap</p>
+					<p class="dark-mode">HTML/CSS/Bootstrap</p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -157,94 +179,104 @@
     	</div>
 	</div>
 	<!-- works -->
-	<section class="news light-mode" id="work">
+	<section class="news dark-mode" id="work">
 		<div class="text-center">
-			<button class="btn light-mode" id="download">Download Resume <span class="fa fa-download"></span></button>
+			<a href="https://drive.google.com/file/d/10CptAYCNZzbsnW6JWZS0aycV_wtWx3bN/view?usp=sharing" target="new" class="btn dark-mode" id="download" >Download Resume <span class="fa fa-download" download></span></a>
 		</div>
-		<div class="container resume-container mt-5">
+		<div class="container resume-container mt-5" id="resume">
 			<div class="resume-header">
-				<h3>RESUME</h3>
+				<h3><b>RESUME</b></h3>
 			</div>
 			<hr>
-			<div class="resume-body">
+			<div class="resume-body container">
 				<div class="objective">
-					<h3>Objective</h3><br> Enthusiatic learner, seeking an entry-level internship position, bringing outstanding dedication to the organization's affairs while gaining experience on the field.
+					<h3><span class="fa fa-pencil"></span> Objective</h3><br> Enthusiatic learner, seeking an entry-level internship position, bringing outstanding dedication to the organization's affairs while gaining experience on the field.
 				</div>
 				<hr>
 				<div class="education">
-					<h3>Education</h3><br> <b>Government Engineering College, Gandhinagar</b><br>BE in Computer Engineering<br>CPI-9
+					<h3><span class="fa fa-graduation-cap"></span> Education</h3><br> <b>Government Engineering College, Gandhinagar</b><br><b>(2017-2021)</b><br>BE in Computer Engineering<br>CPI- 9.15<br>(2017-2021)
 				</div>
 				<hr>
-				<div class="technical-skills">
-					<h3>Technical Skills</h3><br>
-					<div class="category">
-						<b>Languages</b><br>
-						<table class="table table-borderless table-sm">
-							<tr>
-								<td style="width: 200px;">C, C++</td>
-								<td><progress class="progress-bar" value="90" max="100"></progress></td>
-							</tr>
-							<tr>
-								<td>C#</td>
-								<td><progress class="progress-bar" value="80" max="100"></progress></td>
-							</tr>
-							<tr>
-								<td>Java</td>
-								<td><progress class="progress-bar" value="70" max="100"></progress></td>
-							</tr>
-							<tr>
-								<td>HTML</td>
-								<td><progress class="progress-bar" value="90" max="100"></progress></td>
-							</tr>
-							<tr>
-								<td>CSS,Bootstrap</td>
-								<td><progress class="progress-bar" value="90" max="100"></progress></td>
-							</tr>
-						</table>
-					</div><br>
-					<b>Frameworks</b><br>
-					<div class="category">
-						<table class="table table-borderless table-sm">
-							<tr>
-								<td style="width: 200px;">ASP.NET MVC</td>
-								<td><progress class="progress-bar" value="50" max="100"></progress></td>
-							</tr>
-							<tr>
-								<td>ASP.NET CORE</td>
-								<td><progress class="progress-bar" value="80" max="100"></progress></td>
-							</tr>
-							<tr>
-								<td>Android</td>
-								<td><progress class="progress-bar" value="50" max="100"></progress></td>
-							</tr>
-						</table>
-					</div><br>
-					<b>Other Skills</b><br>
-					<div class="category">
-						<table class="table table-borderless table-sm">
-							<tr>
-								<td style="width: 200px;">Graphics Designing</td>
-								<td><progress class="progress-bar" value="60" max="100"></progress></td>
-							</tr>
-							<tr>
-								<td>Content Writing</td>
-								<td><progress class="progress-bar" value="90" max="100"></progress></td>
-							</tr>
-						</table>
+				
+					<div class="technical-skills">
+						<h3><span class="fa fa-code"></span> Technical Skills</h3><br>
+						<div class="category">
+							<b>Languages</b><br>
+							<table>
+								<tr>
+									<td style="width: 200px;">C, C++</td>
+									<td><progress class="progress-bar" value="90" max="100"></progress></td>
+								</tr>
+								<tr>
+									<td>C#</td>
+									<td><progress class="progress-bar" value="80" max="100"></progress></td>
+								</tr>
+								<tr>
+									<td>Java</td>
+									<td><progress class="progress-bar " value="70" max="100"></progress></td>
+								</tr>
+								<tr>
+									<td>HTML</td>
+									<td><progress class="progress-bar " value="90" max="100"></progress></td>
+								</tr>
+								<tr>
+									<td>CSS,Bootstrap</td>
+									<td><progress class="progress-bar " value="90" max="100"></progress></td>
+								</tr>
+							</table>
+						</div><br>
+						<b>Frameworks</b><br>
+						<div class="category">
+							<table>
+								<tr>
+									<td style="width: 200px;">ASP.NET MVC</td>
+									<td><progress class="progress-bar " value="50" max="100"></progress></td>
+								</tr>
+								<tr>
+									<td>ASP.NET CORE</td>
+									<td><progress class="progress-bar " value="80" max="100"></progress></td>
+								</tr>
+								<tr>
+									<td>Android</td>
+									<td><progress class="progress-bar " value="50" max="100"></progress></td>
+								</tr>
+							</table>
+						</div><br>
+						<b>Other Skills</b><br>
+						<div class="category">
+							<table>
+								<tr>
+									<td style="width: 200px;">Graphics Designing</td>
+									<td><progress class="progress-bar " value="30" max="100"></progress></td>
+								</tr>
+								<tr>
+									<td>Content Writing</td>
+									<td><progress class="progress-bar " value="70" max="100"></progress></td>
+								</tr>
+							</table>
+						</div>
 					</div>
-				</div>
+					<hr>
+					<div class="certifications">
+						<h3><span class="fa fa-star"></span> Certifications</h3><br>
+						<ul type="none" class="ml-3">
+							<li><a href="#">Angular</a></li>
+							<li><a href="https://drive.google.com/file/d/1qU-ifGwGGAvlD98O4shxdpq5l9ZAghjo/view?usp=sharing" target="new">Bootstrap</a></li>
+						</ul>
+					</div>
+				
 				<hr>
 				<div class="achievements">
-					<h3>Achievements</h3><br> <b>Event: 21st ISTE National Students Convention 2019</b><br>College: LDCE<br>Activity: Poster Presentation on Artificial Intelligence<br>Position Secured: 2nd
+					<h3><span class="fa fa-trophy"></span> Achievements</h3><br> <b>Event: 21st ISTE National Students Convention 2019</b><br>College: LDCE<br>Activity: Poster Presentation on Artificial Intelligence<br>Position Secured: 2nd
 				</div>
 				<hr>
 				<div class="activities">
-					<h3>Activities</h3><br>
-					<ul type="disc">
-						<li>Attended a workshop on Web Development at Silverwing Private Ltd. Company</li>
-						<li>Attended a workshop on Machine Learning at DAIICT</li>
-						<li>Participated in Smart Gujarat for New India Hackathon and got qualified for zonal round</li>
-						<li>Volunteered a non-tech event at GECG during Quench Tech-Fest</li>
+					<h3><span class="fa fa-check-circle"></span> Activities</h3><br>
+					<ul type="disc" class="ml-5">
+						<li>Attended a workshop on Web Development at Silverwing Private Ltd. Company.</li>
+						<li>Attended a workshop on Machine Learning at DAIICT.</li>
+						<li>Participated in <strong>Smart Gujarat for New India Hackathon</strong> and got qualified for <strong>zonal round.</strong></li>
+						<li>Volunteered a non-tech event at GECG during Quench Tech-Fest.</li>
 					</ul>
 				</div>
 			</div>
@@ -281,7 +313,7 @@
 					<li><a href="https://www.facebook.com/JyotikaSawlani" target="blank"><span class="fa fa-facebook"></span></a></li>
 					<li><a href="https://twitter.com/JyotikaSawlani" target="blank"><span class="fa fa-twitter"></span></a></li>
 					<li><a href="https://www.instagram.com/__sj._._" target="blank"><span class="fa fa-instagram"></span></a></li>
-					<li><a href="#"><span class="fa fa-envelope"></span></a></li>
+					<li><a href="mailto:sawlanijyotika@gmail.com"><span class="fa fa-envelope"></span></a></li>
 					<li><a href="https://github.com/jyotikaaa" target="blank"><span class="fa fa-github"></span></a></li>
 					<li><a href="https://www.linkedin.com/in/jyotika-sawlani-b4b81017b" target="blank"><span class="fa fa-linkedin"></span></a></li>
 				</ul>
@@ -309,7 +341,11 @@
 				mybutton.style.display = "none";
 			}
 		}
+		function downloadPdf() {
+			window.location.href='images/1.jpg'
+		}
 	</script>
-	<script src="js/scripts.js"></script>
+	
+	
 </body>
 </html>

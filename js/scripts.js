@@ -2,15 +2,18 @@ function changeMode(){
     console.log("Button clicked");
 
     var body = document.getElementById("body");
+    
     if(body.classList.contains("light-mode"))
     {
         body.classList.remove("light-mode");
         body.classList.add("dark-mode");
+        
     }
     else
     {
-        body.classList.add("light-mode");
         body.classList.remove("dark-mode");
+        body.classList.add("light-mode");
+        
     }
 
     var btn = document.getElementById("switchMode");
@@ -72,5 +75,32 @@ function changeMode(){
         download.classList.add("light-mode");
         download.classList.remove("dark-mode");
     }
+    var modal = document.getElementById("modal");
+    if(modal.classList.contains("light-mode"))
+    {
+        modal.classList.remove("light-mode");
+        modal.classList.add("dark-mode");
+    }
+    else
+    {
+        modal.classList.add("light-mode");
+        modal.classList.remove("dark-mode");
+    }
+
+    var para=document.getElementsByTagName("p")
+    for(let i=0;i<para.length;i++)
+    {
+        if(para[i].classList.contains("light-mode"))
+        {
+            para[i].classList.remove("light-mode");
+            para[i].classList.add("dark-mode");
+        }
+        else
+        {
+            para[i].classList.remove("dark-mode");
+            para[i].classList.add("light-mode");   
+        }
+    }
+
     
 }
