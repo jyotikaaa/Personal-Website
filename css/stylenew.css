@@ -1,7 +1,12 @@
 html {
   scroll-behavior: smooth;
 }
-
+.circle.dark-mode{
+    color: rgb(170, 170, 170);
+}
+.circle.light-mode{
+    color: #888;
+}
 #toTop {
     display: none;
     text-decoration: none;
@@ -21,12 +26,18 @@ html {
 .modal-header{
     border-bottom: none;
 }
+.modal.light-mode{
+    background-color: rgba(0,0,0,0.8);
+}
+.modal.dark-mode{
+    background-color: rgba(0,0,0,0.8);
+}
 
 .skills-grid{
     margin-bottom: 30px;
 }
 
-/*#download.light-mode{
+#download.light-mode{
     background-color:#2e2e2e ;
     color: white;
 
@@ -37,21 +48,13 @@ html {
 }
 #download:hover{
     background-color:#414141 ;
-}*/
-.resume-container.light-mode{
-
-    background-color: #d6d6d6;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    color:black
-}
-.resume-container.dark-mode {
-    background-color: #000;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    color: white;
 }
 
+.resume-container {
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 
 #modal.light-mode{
     background-color: white;
@@ -66,6 +69,9 @@ html {
 .resume-container>div {
     padding: 20px;
 }
+#resume.light-mode{
+    background-color: #f5f5f5;
+}
 
 .resume-header {
     text-align: center;
@@ -75,6 +81,7 @@ html {
 .resume-body>div {
     padding: 15px;
 }
+
 
 
 td {
@@ -110,7 +117,13 @@ progress {
     color:#3e3e3e;
 }
 #headings.dark-mode{
-    color:whitesmoke;
+    color:white
+}
+#name.light-mode{
+    color:rgb(100, 100, 100);
+}
+#name.dark-mode{
+    color:rgb(211, 211, 211);
 }
 body.light-mode {
     padding: 0;
@@ -219,7 +232,14 @@ nav {
     margin: 0;
     padding: 0;
 }
-header {
+header.dark-mode {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    background: #282828;
+    padding: 1em 0;
+}
+header.light-mode {
     position: absolute;
     z-index: 9;
     width: 100%;
@@ -285,11 +305,11 @@ nav ul li ul li:hover {
 /* Background color change on Hover */
 
 nav a:hover {
-    color: #EA8A95;
+    color: #dd5e6d;
 }
 
 .menu li.active a {
-    color: #EA8A95;
+    color: #dd5e6d;
 }
 
 /* Hide Dropdowns by Default
@@ -362,6 +382,21 @@ li > a:only-child:after {
         margin: 0;
     }
 
+    header.dark-mode {
+        position: absolute;
+        z-index: 9;
+        width: 100%;
+        background: black;
+        padding: 1em 0;
+    }
+    header.light-mode {
+        position: absolute;
+        z-index: 9;
+        width: 100%;
+        background: white;
+        padding: 1em 0;
+    }
+
     /* Hide the navigation menu by default */
     /* Also hide the  */
     .toggle + a,
@@ -373,14 +408,16 @@ li > a:only-child:after {
     .toggle {
         display: block;
         padding: 8px 20px;
-        font-size: 15px;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
         text-decoration: none;
         border: none;
-        
-        background-color: #ffffff;
-        color: #333;
+        background-color: #df4254 ;
         cursor: pointer;
+        
     }
+    
     .menu .toggle {
         float: none;
         text-align: center;
@@ -529,7 +566,7 @@ li > a:only-child:after {
     border-radius: 50%;
 }
 .banner-button, button.submit {
-    background: #e66b79;
+    background: #df4254;
     color: #fff;
     letter-spacing: 1px;
     font-size: 1.5em;
@@ -544,7 +581,7 @@ li > a:only-child:after {
 }
 .banner-button:hover {
     border:none;
-     background:#db5363;
+     background:#dd2b40;
     color: #fff;
 }
 a.banner-button2 {
@@ -654,7 +691,7 @@ p.sub-tittle {
 .news.light-mode {
     padding: 8em 0;
     box-shadow: inset 0px 0px 5px -2px rgba(0, 0, 0, 0.47);
-    background: #f5f5f5;
+    background: white;
 }
 .news.dark-mode {
     padding: 8em 0;
@@ -673,7 +710,7 @@ section.news.text-center h4 {
 /* contact */
 .wedo {
     padding: 8em 0;
-    background: #303030;
+    background: #181717;
 }
 .contact_grid_right input[type="text"], .contact_grid_right input[type="email"], .contact_grid_right textarea {
     outline: none;
@@ -974,7 +1011,7 @@ label {
     margin-top: 2em;
     text-align: center;
 }
-	.banner-bottom {
+.banner-bottom {
     padding: 2em 5em 3em 5em;
 }
 .agileits-services {
@@ -1024,7 +1061,7 @@ nav ul {
 
 @media(max-width: 736px) {
    
-	.banner-bottom {
+.banner-bottom {
     padding: 2em 3em 3em 3em;
 }
 .agileits-services {

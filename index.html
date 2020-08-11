@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en-US">
 <head>
 	<title>Jyotika Sawlani</title>
 	<!-- Meta tag Keywords -->
@@ -20,14 +20,11 @@
 	<!-- Custom-Files -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Bootstrap-Core-CSS -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/stylenew.css" type="text/css" media="all" />
 	<!-- Style-CSS -->
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<!-- Font-Awesome-Icons-CSS -->
 	<!-- //Custom-Files -->
-	<!-- Web-Fonts -->
-	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-	<!-- //Web-Fonts -->
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -36,15 +33,14 @@
 <body class="dark-mode" id="body">
 	<!-- header -->
 		<!-- navigation -->
-		<div class="main-top">
-		 <header id="home">
+	<div class="main-top">
+		 <header id="home" class="dark-mode">
 			<div class="container-fluid px-lg-5 ">
 				<nav class="mnu mx-auto">
-						  <label for="drop" class="toggle btn text-white" style="background:#e97c88 ;">Menu</label>
+						  <label for="drop" class="toggle btn text-white" style="background-color: #df4254 ;">Menu</label>
 							<input type="checkbox" id="drop">
-							<ul class="menu">
-								<li class="mr-lg-4 mr-3 active"><a href="index.html">Home</a></li>
-								<li class="mr-lg-4 mr-3"><a href="#" data-toggle="modal" data-target="#myModal" class="scroll">About Me</a></li>
+							<ul class="menu ">
+								<li class="mr-lg-4 mr-3 active"><a href="#about">Home</a></li>
 								<li class="mr-lg-4 mr-3"><a href="#services" class="scroll">Skills</a></li>
 								<li class="mr-lg-4 mr-3"><a href="#work" class="scroll">Resume</a></li>
 								<li><a href="#contact" class="scroll">Contact</a></li>
@@ -52,110 +48,123 @@
 				</nav>
 			</div>
 		</header>
-		</div>
+	</div>
 		<!-- //navigation-->
 
-		<button id="switchMode" class="btn btn-sm dark-mode" onclick="changeMode()"><span class="fa fa-moon-o" id="icon"></span></button>
+	<button id="switchMode" class="btn btn-sm dark-mode" onclick="changeMode()"><span class="fa fa-moon-o" id="icon"></span></button>
 
 	<section class="banner-bottom" id="about">
 		<div class="container">
-            <div class="inner-sec">
-                <div class="row middle-grids">
-                    <div class="col-lg-4 advantage-grid-info1">
-                        <div class="advantage_left1 text-center">
-                            <img src="images/1.jpg" class="img-fluid" alt="">
-                        </div>
-                    </div> 
-					 <div class="col-lg-8 advantage-grid-info">
-                        <div class="advantage_left">
-                             <h1 class="heading text-capitalize mb-sm-5 mb-4 dark-mode">Hi. I'm <span>Jyotika Sawlani.</span></h1>
-							<p class="mt-4 subs dark-mode">A computer engineer who <span>hates </span>coding.</p>
-							<a href="#" data-toggle="modal" data-target="#myModal" class="banner-button btn mt-5" >Why should I be hired?</a>
+			<div class="inner-sec">
+				<div class="row middle-grids">
+					<div class="col-lg-4 advantage-grid-info1">
+						<div class="advantage_left1 text-center">
+							<img src="images/profile.jpg" class="img-fluid" alt="Profile">
 						</div>
-                    </div>
-                </div>
-            </div>
+					</div> 
+					 <div class="col-lg-8 advantage-grid-info">
+						<div class="advantage_left">
+							 <h1 class="heading text-capitalize mb-sm-5 mb-4 dark-mode" id="name" >Hi. I'm <span>Jyotika Sawlani.</span></h1>
+							<p class="mt-4 subs dark-mode">A computer engineer who hates <span>just </span>coding.</p>
+							<a href="#" data-toggle="modal" data-target="#myModal" class="banner-button btn mt-5">Can't <i>just</i> code - a story</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLabel"
+	<div class="container-fluid">
+		<div class="modal fade dark-mode p-0" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLabel"
 		aria-hidden="true">
-		<div class="modal-dialog mt-5" role="document">
-			<div class="modal-content modal-text dark-mode" id="modal">
-				<div class="modal-header">
-					<h5 class="modal-title" id="myLabel"><strong>I should be hired because...</strong></h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>I listen. I question. I'm dedicated. I always find a drive in everything that I do. I'm hardworking.</p>
-
-				</div>
-			</div>		
+			<div class="modal-dialog "  role="document">
+				<div class="modal-content modal-text dark-mode" id="modal">
+					<div class="modal-header">
+						<h5 class="modal-title" id="myLabel" style="font-family: sans-serif;"><strong><i>Can't just code</i></strong></h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="p-2">
+							<p style="font-family: sans-serif; font-size: 18px;" class="mb-4">
+								This is Joy. Joy works 9 to 5 in a company where people barely interact with each other (except for when they got errors in their code, ofcourse). She gets herself some coffee during breaks and sips it alone on her desk, cursing her mundane job and wishing that she should have followed her dream career instead, architecture.
+							</p>
+							<p style="font-family: sans-serif; font-size: 18px;" class="mb-4">
+								At last, she decides to try and switch companies a couple of times and if this feeling of being doomed and being unable to love her job persists, she'll quit programing and try something else out. 
+							</p>
+							<p style="font-family: sans-serif; font-size: 18px;" class="mb-4">
+								So now she's back to square one, spewing her resumes and CVs in companies that have better work policies (or so she heard). Finally, she lands a job in this new company which her friend had recommended once. "I know you and I've worked in that company before. You'll love it there, trust me", was what he had said. So putting her faith in him, she gave it a shot.
+							</p>
+							<p style="font-family: sans-serif; font-size: 18px;" class="mb-4">
+								Well, at this point, she doesn't know how everything in her life is about to change.
+							</p>
+							<p style="font-family: sans-serif; font-size: 18px;" class="mb-4">
+								This company, is nothing like she expected it to be. Nothing here is about just getting things done. Rather than opting for traditional ways of doing stuff, they call in for meetings for everyone to brainstorm together and come up with different yet top-notch ideas. There's always someone guiding the rest of the team towards making better decisions by sharing their experiences of failure and success. Funny stories of how things went wrong in the past and how they got their way around it.
+							</p>
+							<p style="font-family: sans-serif; font-size: 18px;" class="mb-4">
+								Here's her favourite part, they have got a centralized music system! They believe music greatly affects the quality of the atmosphere in the room and the work being done as well. Someone's feeling tired? They got Bon Jovi's 'It's my life' blasting to refuel them. Don't feel like working today? They'll get Rihanna & Drake to convince you to work. 
+							</p>
+							<p style="font-family: sans-serif; font-size: 18px;" class="mb-4">
+								There's a perinial flow of ideas and information and exceptional vibes across the office everyday at work. It's exciting as it brings the best out of her. It's not just working your ass off anymore. It's about being a part of a community that believes in growing together.
+							</p>
+							<p style="font-family: sans-serif; font-size: 18px;" class="mb-4">
+								<i>And suddenly while working today, when the room was quite except for 'Some Nights' by Fun playing in the background, she experienced this epiphany that now, she loves her job as a software developer. And life feels right and much more better as she gets back to work.</i>
+							</p>
+						</div>
+						<hr>
+						<p style="font-family: sans-serif; font-size: 18px;" class="mt-5 mb-4">
+							If you have read this far, greetings to you too! I'm Jyotika (<i>aka</i> Joy). So now you know what I mean when I say I can't <i>just</i> code. Like Selena said it,
+						</p>
+						<div class="row justify-content-center mt-5">
+							<div class="col-10">
+								<img src="images/CantJustCode.gif" height="200px">
+							</div>
+						</div>
+						<div class="row justify-content-center mt-5">
+								<button class="btn mt-2" type="button" class="close" data-dismiss="modal" aria-label="Close"><b>Close</b></button>
+						</div>
+					</div>
+				</div>		
+			</div>
 		</div>
 	</div>
 	
 	<div class="agileits-services dark-mode" id="services">
 		<div class="container">
 		   <h2 class="heading text-capitalize dark-mode" id="headings" > Skills </h2>
-		   <!--<p class="subs mt-4 dark-mode">Proin ac fermentum est. Cras mi ipsum, consectetur.</p>
-            <div class="agileits-services-row row pt-md-5 pb-5  text-center">
-                <div class="col-lg-4">
-                    <div class="agileits-services-grids mt-lg-0 mt-md-0 mt-5">
-                       <span class="fa fa-code"></span>
-                        <h4 class="mt-4 mb-4">Consectetur</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum inventore consectetur. </p>
-                       
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="agileits-services-grids mt-lg-0 mt-5">
-                        <span class="fa fa-copy"></span>
-                        <h4 class="mt-4 mb-4">Adipisicing</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum inventore consectetur.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4  mt-lg-0 mt-5">
-                    <div class="agileits-services-grids">
-                       <span class="fa fa-diamond"></span>
-                       <h4 class="mt-4 mb-4">Sit amet</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum inventore consectetur.</p>
-                    </div>
-                </div>
-			</div>-->
 
 			<div class="skill-grids row">
 				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
-					<div class="circle" id="circles-1"></div>
-					<p class="dark-mode">Photoshop</p>
+					<div class="circle dark-mode" id="circles-6"></div>
+					<p class="dark-mode">HTML/CSS/Bootstrap</p>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
-					<div class="circle" id="circles-2"></div>
-					<p class="dark-mode">Android</p>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
-					<div class="circle" id="circles-3"></div>
-					<p class="dark-mode">Content Writing</p>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
-					<div class="circle" id="circles-4"></div>
-					<p class="dark-mode">Angular</p>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
-					<div class="circle" id="circles-5"></div>
+					<div class="circle dark-mode" id="circles-5"></div>
 					<p class="dark-mode">ASP.NET CORE</p>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
-					<div class="circle" id="circles-6"></div>
-					<p class="dark-mode">HTML/CSS/Bootstrap</p>
+					<div class="circle dark-mode" id="circles-1"></div>
+					<p class="dark-mode">Photoshop</p>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
+					<div class="circle dark-mode" id="circles-3"></div>
+					<p class="dark-mode">Content Writing</p>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
+					<div class="circle dark-mode" id="circles-2"></div>
+					<p class="dark-mode">Android</p>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6  skills-grid text-center">
+					<div class="circle dark-mode" id="circles-4"></div>
+					<p class="dark-mode">Angular</p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 			<script src="js/circles.js"></script>
 			<script>
 				
-				var colors = [ ['#ffffff','#f6608a',], ['#ffffff','#f6608a',], ['#ffffff','#f6608a',], ['#ffffff','#f6608a',], ['#ffffff','#f6608a',], ['#ffffff','#f6608a',]];
+				var colors = [ ['#ffffff','#df4254',], ['#ffffff','#df4254',], ['#ffffff','#df4254',], ['#ffffff','#df4254',], ['#ffffff','#df4254',], ['#ffffff','#df4254',]];
 					for (var i = 1; i <= 7; i++) {
 						var child = document.getElementById('circles-' + i),
 							percentage = 30 + (i * 10);
@@ -181,16 +190,16 @@
 	<!-- works -->
 	<section class="news dark-mode" id="work">
 		<div class="text-center">
-			<a href="https://drive.google.com/file/d/10CptAYCNZzbsnW6JWZS0aycV_wtWx3bN/view?usp=sharing" target="new" class="btn dark-mode" id="download" >Download Resume <span class="fa fa-download" download></span></a>
+			<a href="images/Resume.pdf" target="new" class="btn btn-dark" id="download" >View and Download Resume <span class="fa fa-download" download></span></a>
 		</div>
-		<div class="container resume-container mt-5" id="resume">
-			<div class="resume-header">
+		<div class="container resume-container dark-mode mt-5" id="resume" hidden>
+			<div class="resume-header pt-5 pb-3">
 				<h3><b>RESUME</b></h3>
 			</div>
 			<hr>
 			<div class="resume-body container">
 				<div class="objective">
-					<h3><span class="fa fa-pencil"></span> Objective</h3><br> Enthusiatic learner, seeking an entry-level internship position, bringing outstanding dedication to the organization's affairs while gaining experience on the field.
+					<h3><span class="fa fa-pencil"></span> Objective</h3><br> Enthusiatic and dedicated learner, seeking an entry-level internship position.
 				</div>
 				<hr>
 				<div class="education">
@@ -205,11 +214,11 @@
 							<table>
 								<tr>
 									<td style="width: 200px;">C, C++</td>
-									<td><progress class="progress-bar" value="90" max="100"></progress></td>
+									<td><progress class="progress-bar" value="80" max="100"></progress></td>
 								</tr>
 								<tr>
 									<td>C#</td>
-									<td><progress class="progress-bar" value="80" max="100"></progress></td>
+									<td><progress class="progress-bar" value="60" max="100"></progress></td>
 								</tr>
 								<tr>
 									<td>Java</td>
@@ -220,8 +229,17 @@
 									<td><progress class="progress-bar " value="90" max="100"></progress></td>
 								</tr>
 								<tr>
-									<td>CSS,Bootstrap</td>
-									<td><progress class="progress-bar " value="90" max="100"></progress></td>
+									<td>Javascript, jQuery</td>
+									<td><progress class="progress-bar " value="60" max="100"></progress></td>
+								</tr>
+							</table>
+						</div><br>
+						<b>Web Design</b><br>
+						<div class="category">
+							<table>
+								<tr>
+									<td style="width: 200px;">CSS, Bootstrap</td>
+									<td><progress class="progress-bar " value="70" max="100"></progress></td>
 								</tr>
 							</table>
 						</div><br>
@@ -240,13 +258,17 @@
 									<td>Android</td>
 									<td><progress class="progress-bar " value="50" max="100"></progress></td>
 								</tr>
+								<tr>
+									<td>Angular</td>
+									<td><progress class="progress-bar " value="50" max="100"></progress></td>
+								</tr>
 							</table>
 						</div><br>
 						<b>Other Skills</b><br>
 						<div class="category">
 							<table>
 								<tr>
-									<td style="width: 200px;">Graphics Designing</td>
+									<td style="width: 200px;">Graphic Designing</td>
 									<td><progress class="progress-bar " value="30" max="100"></progress></td>
 								</tr>
 								<tr>
@@ -260,8 +282,8 @@
 					<div class="certifications">
 						<h3><span class="fa fa-star"></span> Certifications</h3><br>
 						<ul type="none" class="ml-3">
-							<li><a href="#">Angular</a></li>
-							<li><a href="https://drive.google.com/file/d/1qU-ifGwGGAvlD98O4shxdpq5l9ZAghjo/view?usp=sharing" target="new">Bootstrap</a></li>
+							<li><a href="https://coursera.org/share/c4fbed47f4cbbfef10cd7de66fa2c507" target="new">Angular</a></li>
+							<li><a href="https://coursera.org/share/28e5ef2167250638dcd05774e9f0e054" target="new">Bootstrap</a></li>
 						</ul>
 					</div>
 				
@@ -272,11 +294,11 @@
 				<hr>
 				<div class="activities">
 					<h3><span class="fa fa-check-circle"></span> Activities</h3><br>
-					<ul type="disc" class="ml-5">
-						<li>Attended a workshop on Web Development at Silverwing Private Ltd. Company.</li>
+					<ul type="disc" class="ml-3">
+						<li>Attended a workshop on Web Development at Silverwing Pvt. Ltd.</li>
 						<li>Attended a workshop on Machine Learning at DAIICT.</li>
-						<li>Participated in <strong>Smart Gujarat for New India Hackathon</strong> and got qualified for <strong>zonal round.</strong></li>
-						<li>Volunteered a non-tech event at GECG during Quench Tech-Fest.</li>
+						<li>Participated in <strong>Smart Gujarat for New India Hackathon</strong> and qualified for <strong>zonal round.</strong></li>
+						<li>Organized a non-tech event at GECG during Quench Tech-Fest.</li>
 					</ul>
 				</div>
 			</div>
@@ -311,7 +333,7 @@
 			<div class="follow">
 				<ul class="social_section_1info">
 					<li><a href="https://www.facebook.com/JyotikaSawlani" target="blank"><span class="fa fa-facebook"></span></a></li>
-					<li><a href="https://twitter.com/JyotikaSawlani" target="blank"><span class="fa fa-twitter"></span></a></li>
+					<!--<li><a href="https://twitter.com/JyotikaSawlani" target="blank"><span class="fa fa-twitter"></span></a></li>-->
 					<li><a href="https://www.instagram.com/__sj._._" target="blank"><span class="fa fa-instagram"></span></a></li>
 					<li><a href="mailto:sawlanijyotika@gmail.com"><span class="fa fa-envelope"></span></a></li>
 					<li><a href="https://github.com/jyotikaaa" target="blank"><span class="fa fa-github"></span></a></li>
